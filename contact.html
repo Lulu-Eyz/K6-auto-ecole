@@ -1,49 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header-site">
+      <div class="logo-site">
+        <a href="/"><img src="img/logo-rouge.png" alt="" /></a>
+      </div>
+      <nav class="nav">
+        <button class="nav-mobile" id="nav-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="formules.html">Formules</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <H2>Contact</H2>
+    <div class="container contact">
+      <h2>Contact</h2>
+      <div class="formulaire-contact">
+        <form class="form">
+          <div class="container-input">
+            <p><label for="name">Nom Prénom :</label></p>
+            <p>
+              <input type="text" id="name" name="user_name" />
+            </p>
+          </div>
+          <div class="container-input">
+            <p>
+              <label for="mail">e-mail&nbsp;:</label>
+            </p>
+            <p>
+              <input type="email" id="mail" name="user_mail" />
+            </p>
+          </div>
+          <div class="container-input">
+            <p>
+              <label for="msg">Message :</label>
+            </p>
+            <p>
+              <textarea id="msg" name="user_message"></textarea>
+            </p>
+          </div>
 
-
-    <form action="contact.html" method="post">
-
-        <div>
-            <label for="name">Nom Prénom :</label>
-            <input type="text" id="name" name="user_name">
-        </div>
-        <div>
-            <label for="mail">e-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-        <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-
-        <div class="button">
+          <div class="button-container">
             <button type="submit">Envoyer</button>
-        </div>
-    </form>
+          </div>
+        </form>
+        <div class="localisation">
+            <ul>
+              <li>
+                <p>55 boulevard Mansart 21000 Dijon</p>
+              </li>
+              <li>
+                <p>+33 3 55 21 21 21</p>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+    
+            <img src="img/Maps.png" alt="maps" />
+          </div>
+      </div>
+    </div>
 
     <footer>
-
-        <p>55 boulevard Mansart 21000 Dijon</p>
-        <p>+33 3 55 21 21 21</p>
-
-        <a href="contact.html">Contact</a>
+      <div class="bottom-footer">
         <a href="mentions legales">Mentions légales</a>
-
-        <img src="img/Maps.png" alt="maps">
-
-
-
+        <ul>
+          <li>
+            <img src="" alt="" />
+          </li>
+          <li>
+            <img src="" alt="" />
+          </li>
+        </ul>
+      </div>
     </footer>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

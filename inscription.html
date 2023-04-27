@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <header>
-        <div class="logo"> <img src="img/logo-rouge.png" alt="logo k6 auto ecole rouge"></div>
-        <div class="menu">
-            <a href="contact.html">Accueil</a>
-            <a href="contact.html">Code</a>
-            <a href="contact.html">Conduite</a>
-            <a href="contact.html">Inscription</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </header>
+  <header class="header-site">
+    <div class="logo-site">
+      <a href="/"><img src="img/logo-rouge.png" alt="" /></a>
+    </div>
+    <nav class="nav">
+      <button class="nav-mobile" id="nav-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="formules.html">Formules</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+      <H2>Inscription</H2>
 
-    <main>
+    <main class="inscription">
 
-        <H2>Inscription</H2>
         <p>Vous souhaitez vous inscrire dans notre école de conduite Auto-école k6 pour
             passer votre permis de conduire ?
             C'est très simple, il vous sera demandé de rassembler les documents d'inscriptions ci-dessous et de vous présenter à l'auto-école.
@@ -47,22 +57,23 @@
         <p class="doc">Faites nous parvenir vos documents par ici</p>
         <p class="lettre">Les lettres suivies seront récupérées en main propre *</p>
 
-        <a href="envoyer">Envoyer</a>
+        <a class="button" href="envoyer">Envoyer</a>
     </main>
 
     <footer>
-
-        <p>55 boulevard Mansart 21000 Dijon</p>
-        <p>+33 3 55 21 21 21</p>
-
-        <a href="contact.html">Contact</a>
-        <a href="mentions legales">Mentions légales</a>
-
-        <img src="img/Maps.png" alt="maps">
-
-
-
-    </footer>
+        <div class="bottom-footer">
+          <a href="mentions legales">Mentions légales</a>
+          <ul>
+            <li>
+              <img src="" alt="" />
+            </li>
+            <li>
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <script src="script.js"></script>
     
 </body>
 </html>
