@@ -1,0 +1,798 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiko:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+}
+p {
+  font-family: 'Amiko', sans-serif;
+
+}
+a {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: #940d1b;
+  font-size: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  color: #940d1b;
+  border: 2px solid #940d1b;
+  background-color: white;
+  padding: 10px 0;
+  width: 174px;
+  display: block;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+}
+/* Header */
+.header-site {
+    background: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+.header-site a {
+  text-decoration: none;
+}
+ 
+.logo-site {
+    float: left;
+    height: 66px;
+    width: 80px;
+    line-height: 80px;
+
+}
+
+.logo-site img {
+  max-width: 60%;
+  height: auto;
+}
+
+.logo-site a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ 
+.nav {
+    float: right;
+}
+ 
+.nav-menu {
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+/* Styles for menu links */
+.nav-menu li a {
+  display: block;
+  color: #940d1b;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 26px;
+}
+
+
+ 
+/* Styles for button mobile  */
+#nav-mobile {
+    border: none;
+    cursor: pointer;
+    display: none;
+    float: right;
+    height: 45px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 45px;
+    background: white;
+}
+
+#nav-mobile span {
+  display: block;
+  width: 60%;
+  margin: 4px auto;
+  height: 4px;
+  background: #940d1b;
+}
+
+/* change styles button when open menu */
+#nav-mobile.nav-open {
+    opacity: 1;
+    background-color: white;
+}
+
+/* Changes styles in screen smaller than 768px */
+@media only screen and (max-width: 768px) {
+ 
+    /* show #nav-mobile */
+    #nav-mobile {
+      display: block;
+    }
+ 
+    /* set .nav 100% */
+    .nav {
+        float: none;
+        width: 100%;
+        padding-top: 60px;
+    }
+ 
+    /*  set height 0 and hide content  */
+    .nav-menu {
+        box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        max-height: 0;
+        overflow: hidden;
+    }
+  
+    /* animate expand menu */
+    .nav-menu.open-menu{
+        max-height: 400px;
+        transition: max-height .4s ease;
+        width: 100%;
+    }
+  
+    /* change styles for li */
+    .nav-menu li {
+        background: white;
+        border-bottom: 1px solid #282b30;
+        float: none;
+    }
+  
+    .nav-menu li:last-child{ 
+      border-bottom: 0;
+    }
+ 
+    .nav-menu li a{
+        padding: 15px 0;
+        height: auto;
+        line-height: normal;
+    }
+  
+    .nav-menu li a:hover {
+      background: #940d1b;
+      color: white;
+    }
+     
+}
+
+.red {
+  color: #940d1b;
+}
+.hero {
+  height: 800px;
+  background-image: url("img/examen-conduite.jpg");
+  background-position: center;
+  background-size:cover;
+  
+}
+.hero-intro {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: 'Abril Fatface', cursive;
+}
+.hero-intro ul {
+  margin-bottom: 40px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 20px;
+  border-radius: 20px;
+}
+.hero-intro ul li p {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 500px;
+    
+  }
+  .hero-intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-intro ul {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30%;
+  }
+  .hero-intro ul li p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+/****** fin hero ******/
+
+/************ Bienvenue section ***********/
+
+.bienvenue  {
+  height: 700px;
+  padding: 80px 30px 30px 50px;
+}
+.bienvenue h1 {
+  color: #940d1b;
+  font-size: 50px;
+}
+.bienvenue-container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.bienvenue-container .para, .bienvenue-container .img {
+  width: 50%;
+}
+.bienvenue-container .para p{
+font-size: 20px;
+}
+.bienvenue-container .para .button {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.bienvenue-container .img {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bienvenue {
+    height: 60vh;
+    padding: 80px 10px 30px 10px;
+  }
+  .bienvenue h1 {
+    font-size: 40px;
+  }
+  .bienvenue-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .bienvenue-container .para, .bienvenue-container .img {
+    width: 100%;
+  }
+  .bienvenue-container .img {
+    text-align: center;
+  }
+  .bienvenue-container .img  img {
+    width: 70%;
+    height: auto;
+  }
+  .bienvenue-container .para p{
+    font-size: 15px;
+    text-align: center;
+    }
+
+    .bienvenue-container .para .button {
+      margin: 15px auto;
+      width: 215px;
+    }
+}
+/************ Bienvenue section fin ***********/
+
+/************ formule section ***********/
+.formule {
+  height: 700px;
+  padding: 0px 30px 30px 50px;
+  margin-bottom: 100px;
+}
+
+.formule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+.formule-code, .formule-conduite {
+  width: 50%;
+  padding: 15px;
+} 
+.formule-code a, .formule-conduite a {
+  margin: 0 auto;
+}
+.formule-code .img-code {
+  width: 100%;
+  height: 400px;
+  background: red;
+  background-image: url("img/panneaux.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+
+}
+.formule-conduite .img-conduite {
+  width: 100%;
+  height: 400px;
+  background-image: url("img/voiture-blue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+} 
+@media screen and (max-width: 768px) {
+  .formule {
+    height: 83vh;
+    padding: 80px 10px 30px 10px;
+  }
+  .formule h2 {
+    font-size: 40px;
+  }
+  
+  .formule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .formule-code, .formule-conduite {
+    width: 100%;
+    padding: 15px;
+  } 
+  .formule-code a, .formule-conduite a {
+    margin: 0 auto;
+    width: 215px;
+  }
+
+}
+/************ fin formule section ***********/
+
+/************ formule page ***********/
+.code {
+  margin-top: 80px;
+  padding: 0px 30px 30px 50px;
+  height: 450px;
+
+}
+.code-para {
+  margin-top: 20px;
+  max-width: 75vw;
+}
+.code .stage {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.code .reduc {
+  color: #940d1b;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.persona {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 485px;
+  margin-bottom: 50px;
+
+}
+.persona-para {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.persona-para a {
+  align-self: flex-start;
+}
+.persona-para, .persona-img {
+  width: 50%;
+}
+.persona-img img {
+  width: 80%;
+  height: auto;
+  align-self: flex-start;
+}
+.persona-para ul li {
+  list-style: disc;
+  padding: 10px 0;
+}
+.persona-para ul li:first-child {
+  list-style: none;
+  font-weight: 600;
+}
+.persona-para ul li:last-child {
+  list-style: none;
+}
+.persona-para ul li a {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .code {
+    margin-top: 40px;
+    padding: 0 15px;
+  
+  }
+  .code-para {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .code .stage {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .code .reduc {
+    color: #940d1b;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .persona {
+    margin-top: 105px;
+    width: 100%;
+    height: 58vh;
+    flex-direction: column-reverse;
+  
+  }
+  .persona-para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+  .persona-para a {
+    align-self: flex-start;
+  }
+  .persona-para, .persona-img {
+    width: 100%;
+  }
+  .persona-img img {
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+  }
+  .persona-para ul li {
+    list-style: disc;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .persona-para ul li:first-child {
+    list-style: none;
+    font-weight: 600;
+  }
+  .persona-para ul li:last-child {
+    list-style: none;
+  }
+  .persona-para ul li a {
+    margin: 20px 28%;
+    width: 215px;
+  }
+}
+
+/************ fin formule page ***********/
+
+/************ inscription page ***********/
+
+
+.inscription {
+  margin-top: 80px;
+  padding: 0px 90px 30px 50px;
+  height: 96vh;
+}
+.inscription h2 {
+  margin-bottom: 50px;
+}
+
+.inscription .titre {
+
+  margin-bottom: 20px;
+  max-width: 60vw;
+
+}
+.inscription ul li {
+  list-style: disc;
+  padding: 5px 0;
+}
+.inscription .documents {
+  margin-bottom: 30px;
+}
+.inscription .cas {
+  font-weight: 600;
+  color: #940d1b;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.cas-particuliers p {
+  width: 60vw;
+  padding: 15px 0;
+}
+.cas-particuliers .doc {
+  color: #940d1b;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.cas-particuliers .lettre {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.cas-particuliers .button {
+  margin: 15px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .inscription {
+    margin-top: 80px;
+    padding: 0 30px;
+    height: 100vh;
+  }
+  .inscription h2 {
+    margin-bottom: 50px;
+  }
+  
+  .inscription .titre {
+  
+    margin-bottom: 20px;
+    max-width: 100%;
+  
+  }
+  .inscription ul li {
+    list-style: disc;
+    padding: 5px 0;
+  }
+  .inscription .documents {
+    margin-bottom: 30px;
+  }
+  .inscription .cas {
+    font-weight: 600;
+    color: #940d1b;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cas-particuliers p {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .cas-particuliers .doc {
+    color: #940d1b;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .cas-particuliers .lettre {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .cas-particuliers .button {
+    margin: 20px auto;
+    width: 215px;
+  }
+}
+/************ fin inscription page ***********/
+
+/************ contact page ***********/
+.container-contact {
+  height: 78vh;
+  margin-top: 80px;
+}
+.container-contact h2 {
+  padding-left: 90px;
+}
+.formulaire-contact {
+  padding: 0px 90px 30px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .container-input {
+  width: 40%;
+  margin: 15px 0;
+}
+.form .container-input label {
+  color: #940d1b;
+}
+.form .container-input input, .form .container-input textarea {
+  width: 100%;
+  border: 2px solid #212121;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.form .container-input textarea {
+  height: 120px;
+}
+.localisation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+.localisation ul {
+  margin-right: 20px;
+}
+.localisation ul li {
+  padding: 10px 0;
+}
+.localisation ul li a {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+}
+.localisation img {
+
+  width: 20%;
+  height: auto;
+}
+.mentions-container {
+  font-family: 'Amiko', sans-serif;
+
+}
+.mentions-container ul {
+  align-items: center;
+}
+.mentions-container li a img {
+  width: 40px;
+}
+.mentions-container ul {
+  display: flex;
+}
+.mentions-container ul li {
+  padding: 0 15px;
+}
+.mentions-container a {
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: #212121;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+
+}
+@media screen and (max-width: 768px) {
+  .container-contact {
+    height: 50vh;
+    margin-top: 80px;
+  }
+  .container-contact h2 {
+    padding-left: 90px;
+  }
+  .formulaire-contact {
+    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .form .button {
+    width: 300px;
+  }
+  .form .container-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .form .container-input label {
+    color: #940d1b;
+  }
+  .form .container-input input, .form .container-input textarea {
+    width: 100%;
+    border: 2px solid #212121;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .form .container-input textarea {
+    height: 120px;
+  }
+  .localisation {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+  .localisation ul {
+    float: left;
+    padding: 0 15px;
+  }
+  .localisation ul li {
+    padding: 10px 0;
+  }
+  .localisation ul li a {
+    color: white;
+    font-family: 'Amiko', sans-serif;
+  }
+  .localisation img {
+  
+    width: 100%;
+    height: auto;
+  }
+  .mentions-container {
+    font-family: 'Amiko', sans-serif;
+    padding: 15px 0;
+  
+  }
+  .mentions-container ul {
+    align-items: center;
+  }
+  .mentions-container li a img {
+    width: 30px;
+  }
+  .mentions-container ul {
+    display: flex;
+  }
+  .mentions-container ul li {
+    padding: 0 15px;
+  }
+  .mentions-container a {
+    color: white;
+  }
+  .footer {
+    flex-direction: column;
+    height: 550px;
+    position: relative;
+  
+  }
+}
+
