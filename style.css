@@ -45,10 +45,16 @@ li {
 /* Header */
 .header-site {
     background: white;
-    height: 60px;
+    height: 105px;
     position: sticky;
     top: 0;
 }
+.header-site .nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-site
 
 .header-site a {
   text-decoration: none;
@@ -63,7 +69,7 @@ li {
 }
 
 .logo-site img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -97,6 +103,7 @@ li {
   height: 60px;
   line-height: 60px;
   padding: 0 26px;
+  font-size: 20px;
 }
 
 
@@ -342,8 +349,9 @@ font-size: 20px;
 } 
 @media screen and (max-width: 768px) {
   .formule {
-    height: 83vh;
+    height: 105vh;
     padding: 80px 10px 30px 10px;
+    margin-top: 95px;
   }
   .formule h2 {
     font-size: 40px;
@@ -378,7 +386,7 @@ font-size: 20px;
 .code, .conduite {
   margin-top: 80px;
   padding: 0px 30px 30px 50px;
-  height: 450px;
+  height: 340px;
 
 }
 .code-para {
@@ -405,8 +413,8 @@ font-size: 20px;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 485px;
-  margin-bottom: 50px;
+  height: 340px;
+  margin-top: 80px;
 
 }
 .persona-para {
@@ -426,6 +434,9 @@ font-size: 20px;
   height: auto;
   align-self: flex-start;
 }
+.conduite .persona-img {
+  padding-left: 50px;
+}
 .persona-para ul li {
   list-style: disc;
   padding: 10px 0;
@@ -440,12 +451,48 @@ font-size: 20px;
 .persona-para ul li a {
   margin-top: 20px;
 }
+.conduite-persona {
+  display: flex;
+  margin-bottom: 150px;
+}
+.conduite-persona .persona-img {
+  margin-left: 30px;
+}
+.conduite-persona .persona-para {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 768px) {
   .code {
     margin-top: 40px;
     padding: 0 15px;
   
+  }
+  .code {
+    margin-top: 80px;
+    padding: 0px 15px 30px 15px;
+    height: 600px;
+  
+  }
+  .conduite {
+    padding: 0px 15px 30px 15px;
+
+  }
+  .conduite-persona {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .conduite-persona .persona-para ul p {
+    font-size: 15px;
+  }
+  .conduite-persona .persona-img {
+    margin-left: 0;
+  }
+  .conduite-persona .persona-para .button {
+    margin: 15px 10%;
   }
   .code-para {
     margin-top: 20px;
@@ -500,9 +547,11 @@ font-size: 20px;
     list-style: none;
   }
   .persona-para ul li a {
-    margin: 20px 28%;
+    margin: 20px 25%;
     width: 215px;
   }
+
+
 }
 
 /************ fin formule page ***********/
@@ -566,7 +615,7 @@ font-size: 20px;
   .inscription {
     margin-top: 80px;
     padding: 0 30px;
-    height: 174vh;
+    height: 146vh;
   }
   .inscription h2 {
     margin-bottom: 50px;
@@ -651,7 +700,7 @@ font-size: 20px;
 .form .container-input input, .form .container-input textarea {
   width: 100%;
   border: 2px solid #212121;
-  padding: 15px 0;
+  padding: 15px;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -712,7 +761,7 @@ font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   .container-contact {
-    height: 50vh;
+    height: 58vh;
     margin-top: 80px;
   }
   .container-contact h2 {
@@ -798,7 +847,7 @@ font-size: 20px;
   }
   .footer {
     flex-direction: column;
-    height: 550px;
+    height: 470px;
     position: relative;
   
   }
