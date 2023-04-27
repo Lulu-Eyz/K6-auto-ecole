@@ -370,7 +370,12 @@ font-size: 20px;
 /************ fin formule section ***********/
 
 /************ formule page ***********/
-.code {
+.red {
+  color:#940d1b;
+  font-weight: 600;
+  font-size: 20px;
+}
+.code, .conduite {
   margin-top: 80px;
   padding: 0px 30px 30px 50px;
   height: 450px;
@@ -380,19 +385,22 @@ font-size: 20px;
   margin-top: 20px;
   max-width: 75vw;
 }
-.code .stage {
+.code .stage, .conduite .stage {
   font-size: 20px;
   margin-top: 30px;
 }
+.conduite .red {
+  margin-top: 20px;
+}
 
-.code .reduc {
+.code .reduc, .conduite .reduc {
   color: #940d1b;
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: 30px;
 }
-.persona {
+.persona{
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -505,7 +513,7 @@ font-size: 20px;
 .inscription {
   margin-top: 80px;
   padding: 0px 90px 30px 50px;
-  height: 96vh;
+  height: 120vh;
 }
 .inscription h2 {
   margin-bottom: 50px;
@@ -558,7 +566,7 @@ font-size: 20px;
   .inscription {
     margin-top: 80px;
     padding: 0 30px;
-    height: 100vh;
+    height: 174vh;
   }
   .inscription h2 {
     margin-bottom: 50px;
