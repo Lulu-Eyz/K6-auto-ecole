@@ -349,9 +349,9 @@ font-size: 20px;
 } 
 @media screen and (max-width: 768px) {
   .formule {
-    height: 105vh;
+    height: 120vh;
     padding: 80px 10px 30px 10px;
-    margin-top: 95px;
+    margin-top: 170px;
   }
   .formule h2 {
     font-size: 40px;
@@ -615,7 +615,7 @@ font-size: 20px;
   .inscription {
     margin-top: 80px;
     padding: 0 30px;
-    height: 146vh;
+    height: 180vh;
   }
   .inscription h2 {
     margin-bottom: 50px;
@@ -761,7 +761,7 @@ font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   .container-contact {
-    height: 58vh;
+    height: 70vh;
     margin-top: 80px;
   }
   .container-contact h2 {
@@ -847,7 +847,7 @@ font-size: 20px;
   }
   .footer {
     flex-direction: column;
-    height: 470px;
+    height: 430px;
     position: relative;
   
   }
