@@ -46,7 +46,8 @@ li {
 .header-site {
     background: white;
     height: 60px;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .header-site a {
@@ -302,6 +303,7 @@ font-size: 20px;
 .formule {
   height: 700px;
   padding: 0px 30px 30px 50px;
+  margin-bottom: 100px;
 }
 
 .formule-container {
@@ -340,7 +342,7 @@ font-size: 20px;
 } 
 @media screen and (max-width: 768px) {
   .formule {
-    height: 90vh;
+    height: 83vh;
     padding: 80px 10px 30px 10px;
   }
   .formule h2 {
@@ -391,12 +393,12 @@ font-size: 20px;
   margin-top: 30px;
 }
 .persona {
-  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   height: 485px;
+  margin-bottom: 50px;
 
 }
 .persona-para {
@@ -434,7 +436,6 @@ font-size: 20px;
 @media screen and (max-width: 768px) {
   .code {
     margin-top: 40px;
-    height: 70vh;
     padding: 0 15px;
   
   }
@@ -455,9 +456,9 @@ font-size: 20px;
     margin-top: 30px;
   }
   .persona {
-    margin-top: 80px;
+    margin-top: 105px;
     width: 100%;
-    height: 80vh;
+    height: 58vh;
     flex-direction: column-reverse;
   
   }
@@ -491,24 +492,307 @@ font-size: 20px;
     list-style: none;
   }
   .persona-para ul li a {
-    margin: 20px auto
+    margin: 20px 28%;
+    width: 215px;
   }
 }
 
+/************ fin formule page ***********/
+
+/************ inscription page ***********/
 
 
+.inscription {
+  margin-top: 80px;
+  padding: 0px 90px 30px 50px;
+  height: 96vh;
+}
+.inscription h2 {
+  margin-bottom: 50px;
+}
 
+.inscription .titre {
 
+  margin-bottom: 20px;
+  max-width: 60vw;
 
+}
+.inscription ul li {
+  list-style: disc;
+  padding: 5px 0;
+}
+.inscription .documents {
+  margin-bottom: 30px;
+}
+.inscription .cas {
+  font-weight: 600;
+  color: #940d1b;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.cas-particuliers p {
+  width: 60vw;
+  padding: 15px 0;
+}
+.cas-particuliers .doc {
+  color: #940d1b;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.cas-particuliers .lettre {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.cas-particuliers .button {
+  margin: 15px auto;
+}
 
+@media screen and (max-width: 768px) {
+  .inscription {
+    margin-top: 80px;
+    padding: 0 30px;
+    height: 100vh;
+  }
+  .inscription h2 {
+    margin-bottom: 50px;
+  }
+  
+  .inscription .titre {
+  
+    margin-bottom: 20px;
+    max-width: 100%;
+  
+  }
+  .inscription ul li {
+    list-style: disc;
+    padding: 5px 0;
+  }
+  .inscription .documents {
+    margin-bottom: 30px;
+  }
+  .inscription .cas {
+    font-weight: 600;
+    color: #940d1b;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
+  .cas-particuliers p {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .cas-particuliers .doc {
+    color: #940d1b;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .cas-particuliers .lettre {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .cas-particuliers .button {
+    margin: 20px auto;
+    width: 215px;
+  }
+}
+/************ fin inscription page ***********/
 
+/************ contact page ***********/
+.container-contact {
+  height: 78vh;
+  margin-top: 80px;
+}
+.container-contact h2 {
+  padding-left: 90px;
+}
+.formulaire-contact {
+  padding: 0px 90px 30px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .container-input {
+  width: 40%;
+  margin: 15px 0;
+}
+.form .container-input label {
+  color: #940d1b;
+}
+.form .container-input input, .form .container-input textarea {
+  width: 100%;
+  border: 2px solid #212121;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.form .container-input textarea {
+  height: 120px;
+}
+.localisation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+.localisation ul {
+  margin-right: 20px;
+}
+.localisation ul li {
+  padding: 10px 0;
+}
+.localisation ul li a {
+  color: white;
+  font-family: 'Amiko', sans-serif;
+}
+.localisation img {
 
+  width: 20%;
+  height: auto;
+}
+.mentions-container {
+  font-family: 'Amiko', sans-serif;
 
+}
+.mentions-container ul {
+  align-items: center;
+}
+.mentions-container li a img {
+  width: 40px;
+}
+.mentions-container ul {
+  display: flex;
+}
+.mentions-container ul li {
+  padding: 0 15px;
+}
+.mentions-container a {
+  color: white;
+}
 
 .footer {
   width: 100%;
-  height: 90px;
+  height: 150px;
   background-color: #212121;
   color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+
 }
+@media screen and (max-width: 768px) {
+  .container-contact {
+    height: 50vh;
+    margin-top: 80px;
+  }
+  .container-contact h2 {
+    padding-left: 90px;
+  }
+  .formulaire-contact {
+    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .form .button {
+    width: 300px;
+  }
+  .form .container-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .form .container-input label {
+    color: #940d1b;
+  }
+  .form .container-input input, .form .container-input textarea {
+    width: 100%;
+    border: 2px solid #212121;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .form .container-input textarea {
+    height: 120px;
+  }
+  .localisation {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+  .localisation ul {
+    float: left;
+    padding: 0 15px;
+  }
+  .localisation ul li {
+    padding: 10px 0;
+  }
+  .localisation ul li a {
+    color: white;
+    font-family: 'Amiko', sans-serif;
+  }
+  .localisation img {
+  
+    width: 100%;
+    height: auto;
+  }
+  .mentions-container {
+    font-family: 'Amiko', sans-serif;
+    padding: 15px 0;
+  
+  }
+  .mentions-container ul {
+    align-items: center;
+  }
+  .mentions-container li a img {
+    width: 30px;
+  }
+  .mentions-container ul {
+    display: flex;
+  }
+  .mentions-container ul li {
+    padding: 0 15px;
+  }
+  .mentions-container a {
+    color: white;
+  }
+  .footer {
+    flex-direction: column;
+    height: 550px;
+    position: relative;
+  
+  }
+}
+
